@@ -1,0 +1,38 @@
+/**
+	* Form Styles
+	*/
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.label-normal {
+	font-weight: normal;
+}
+
+.pattern {
+	color: #808080;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.supports-color .color,
+.supports-date .date,
+.supports-time .time,
+.supports-month .month {
+	display: none;
+}
+
+/**
+	* Errors
+	*/
+.error {
+	border-color: red;
+}
+
+.error-message {
+	color: red;
+	font-style: italic;
+	margin-bottom: 1em;
+}

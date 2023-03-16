@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Match</title>
+  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top">
+    <div class="mob-nav-item">
+      <a class="nav-link mob-home-icon" href="index.html"><i mi-name="home" class="material-icons navigation-icon"></i></a>
+    </div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMobile"
+      aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-left">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link home-icon" href="index.html"><i mi-name="home" class="material-icons navigation-icon"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tournaments_games.html">Tournaments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cash_match.html">Cash Match</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Ranked</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Extra
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="games" class="material-icons navigation-icon"></i>Current Match</a>
+            <a class="dropdown-item" href="#"><i mi-name="shopping_basket" class="material-icons navigation-icon"></i>Shop</a>
+            <a class="dropdown-item" href="#"><i mi-name="question_answer" class="material-icons navigation-icon"></i>FAQ</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a class="navbar-brand mx-auto" href="#">
+      <div id="logo"><img src="images/logo.jpg" alt="logo"></div>
+    </a>
+
+    <div class="collapse navbar-collapse right-nav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link pr-5" href="#"><i mi-name="search" class="material-icons navigation-icon"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon pr-5 notification" href="#">
+            <i mi-name="notifications_none" class="material-icons navigation-icon"></i>
+            <span class="counter">1689</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i mi-name="chat" class="material-icons navigation-icon"></i></a>
+        </li>
+        <li class="nav-item dropdown user-profile">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i mi-name="account_circle" class="material-icons navigation-icon"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="chrome_reader_mode" class="material-icons navigation-icon"></i>Profile</a>
+            <a class="dropdown-item" href="login.html"><i mi-name="power_settings_new" class="material-icons navigation-icon"></i>Log Out</a>
+            <a class="dropdown-item" href="organize_tournament.html"><i mi-name="view_list" class="material-icons navigation-icon"></i>Organize Tournament</a>
+            <a class="dropdown-item" href="Add_tournament.html"><i mi-name="add" class="material-icons navigation-icon"></i>Add Tournament</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile -->
+    <div class="collapse" id="navbarMobile">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="tournaments.html">Tournaments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cash_match.html">Cash Match</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Ranked</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Extra
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="games" class="material-icons navigation-icon"></i>Current Match</a>
+            <a class="dropdown-item" href="#"><i mi-name="shopping_basket" class="material-icons navigation-icon"></i>Shop</a>
+            <a class="dropdown-item" href="#"><i mi-name="question_answer" class="material-icons navigation-icon"></i>FAQ</a>
+          </div>
+        </li>
+        <li>
+          <hr class="solid">
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link pr-5" href="#"><i mi-name="search" class="material-icons navigation-icon"></i>
+            Search
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon pr-5 notification" href="#">
+            <i mi-name="notifications_none" class="material-icons navigation-icon"></i>
+            Notifications
+            <span class="counter">1689</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i mi-name="chat" class="material-icons navigation-icon"></i> Messages</a>
+        </li>
+        <li class="nav-item dropdown user-profile">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i mi-name="account_circle" class="material-icons navigation-icon"></i> Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="chrome_reader_mode" class="material-icons navigation-icon"></i>Profile</a>
+            <a class="dropdown-item" href="login.html"><i mi-name="power_settings_new" class="material-icons navigation-icon"></i>Log Out</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-image">
+      <img alt="banner-image" src="images/cm-banner.png">
+    </div>
+  </section>
+  <!-- Cash Matches Section -->
+  <section class="pixel_games section_panel">
+    <div class="container">
+      <h4 class="title">
+        <img src="images/cash_icon.png"> <p>CASH MATCHES</p>
+      </h4>
+      <div class="px_games_holder">
+        <div class="game_item">
+          <div class="image">
+            <img src="images/game_1.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">APEX LEGEND</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image">
+            <img src="images/game_2.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">CALL OF DUTY MWII</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image">
+            <img src="images/game_3.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">CALL OF DUTY WARZONE 2.0</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_4.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">FORTNITE</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_5.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">LEAGUE OF LEGENDS</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_6.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">MULTIVERSUS</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_7.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">Super smash bros. brawl</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_8.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">OVERWATCH</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_9.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">rainbow six siege</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_10.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">VALORANT</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_11.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">CALL OF DUTY MW2</a>
+          </div>
+        </div>
+        <div class="game_item">
+          <div class="image coming-soon">
+            <img src="images/game_12.png" alt="img">
+          </div>
+          <div class="game_title">
+            <a href="#">Cold war zombies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Online Tournament Info -->
+  <section class="cash_match_info section_panel">
+    <div class="container">
+      <div class="bg_sec">
+        <div class="main_info_holder">
+          <div id="main">
+            <div class="">
+              <div class="accordion" id="faq">
+                <div class="card">
+                  <div class="card-header" id="faqhead1">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
+                      aria-expanded="true" aria-controls="faq1">CHALLENGE MATCHES</a>
+                  </div>
+
+                  <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                    <div class="card-body">
+                      Create a challenge match for PlayStation, Xbox or PC right here and become a high roller by setting your own rate of pay and showing the world you have the skills required to take on the best. Our challenges offer a vast array of customizations you can use to make sure you are playing the match type you feel most accurately displays your skillset, be it a one and done, best of three, or even best of five. We currently offer challenges on Call of Duty: Ghosts, Call of Duty: Cold War, Call of Duty: Modern Warfare, Call of Duty: Black Ops 4, Call of Duty: Black Ops 3, Call of Duty: World War II, Rogue Company, Fortnite, Fall Guys, Rocket League and more!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="faqhead2">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                      aria-expanded="true" aria-controls="faq2">ELITE MATCHES</a>
+                  </div>
+
+                  <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                    <div class="card-body">
+                      If you play often and want to save a bit of money, be sure to check out our ELITE membership. Not only do Elite members have lower fees, but membership also includes Elite Only Tournaments, high priority tickets and much more! Our Elite membership only tournaments are free to enter for members and total thousands of dollars every month. CMG Elite membership is a deal that can't be passed up.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="faqhead3">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                      aria-expanded="true" aria-controls="faq3">CASH MATCHES</a>
+                  </div>
+
+                  <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                    <div class="card-body">
+                      If you wish to post a cash challenge match, simply deposit some money or win cash prizes to fund your match. Then you must enable the �Cash Matches� feature on your account, which is as simple as clicking on your name in the upper-right hand of the screen and selecting �Cash Matches.� After that, create yourself a team of 1-4 players in order to post a challenge match on the title of your choice.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="faqhead4">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                      aria-expanded="true" aria-controls="faq3">COMPETITIVE MATCHES ON PC, PLAYSTATION OR XBOX</a>
+                  </div>
+
+                  <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-parent="#faq">
+                    <div class="card-body">
+                      At Pixel Esports, our PlayStation, Xbox and PC cash challenges are the perfect method for you to put your skill to the test. If you have found an opponent with enough skill to test you, post your challenge and have them accept it to play games for money or send it to them directly. Pixel Esports is the leader in competitive gaming for popular Call of Duty titles, as well as other hits such as Rogue Company and Fall Guys. We are excited to offer our challenge matches for the whole competitive gaming community. Online gaming has advanced quite a lot in recent years and now with your PlayStation, Xbox or PC you and all your friends can play video games competitively for money. With Pixel Esports's amazing platform, you have the tools to make it big right there in your hands. This year featured some of the biggest changes to the competitive gaming scene and esports competitions that we've ever seen. So get off pubs and get those golds with Pixel Esports.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="faqhead5">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                      aria-expanded="true" aria-controls="faq3">MATCHES WITH MONEY PRIZES</a>
+                  </div>
+
+                  <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                    <div class="card-body">
+                      We promise you that your prize payouts will be fast and you will receive your money in a timely manner, unlike other competitive gaming websites that hold onto your money for months or even years. After all, it is your skill that earned it in the first place. It's worth remembering too that your payout will go to the front of the line if you are one of our loyal ELITE members.We hope you enjoy this feature of our revolutionary platform, right here at CMG, the world's leading platform for competitive gaming.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <p>COMPETITIONS</p>
+              <ul>
+                <li>Tournaments</li>
+                <li>Fortnite</li>
+                <li>Call of Duty</li>
+                <li>Latest News</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>SUPPORT</p>
+              <ul>
+                <li>Ticket Center</li>
+                <li>FAQ</li>
+                <li>About</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>CONTACT</p>
+              <ul>
+                <li>Press inquiries</li>
+                <li>Advertisements</li>
+                <li>Work with us</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>FOLLOW US</p>
+              <ul class="social_icons">
+                <li><a href="https://twitter.com/pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/Twitter.png"></a></li>
+                <li><a href="https://instagram.com/pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/Instagram.png"></a></a></li>
+                <li><a href="https://tiktok.com/@pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/TikTok.png"></a></a></li>
+                <li><a href="https://discord.gg/XrynEh7BF9" target="_blank"><img alt="social_icon"
+                      src="images/Discord.png"></a></a></li>
+                <li><a href="https://youtube.com/@pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/YouTube.png"></a></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        © 2022 Pixel Esports LLC. All Rights Reserved.
+      </div>
+  </footer>
+
+
+</body>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

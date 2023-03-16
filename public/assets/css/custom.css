@@ -1,0 +1,198 @@
+/* .grid_new_holder input:focus,
+select.form-control,
+.grid_new_holder input::placeholder{
+    color: #fff;
+} */
+.grid_new_holder .form-control,
+.grid_new_holder input:focus,
+.grid_new_holder input:-webkit-autofill{
+    background-color: #000 !important;
+    border:1px solid #00b1f5;
+    color:#00b1f5;
+    border-radius: 4px;
+    -webkit-text-fill-color: #00b1f5!important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.grid_new_holder .form-group label.imageUploadLable {
+    margin-top: 10px;
+}
+
+/* Ligh Morde css start */
+
+body.light-mode, html .light-mode,
+.light-mode .content-wrapper {
+    background-color: #f0f2fa;
+}
+.light-mode .card{
+    background-color: #ffffff;
+}
+body.light-mode,
+.light-mode .card .card-title {
+    color: #111;
+}
+li.nav-item.menu-items {
+    margin-bottom: 15px;
+}
+body.light-mode .icon.icon-box-success {
+    background: #00d25b;
+    color: #ffffff;
+}
+body.light-mode .icon.icon-box-danger {
+    background: #fc424a;
+    color: #ffffff;
+}
+.sidebar .sidebar-brand-wrapper .sidebar-brand img {
+    mix-blend-mode: lighten;
+    height:auto;
+}
+.light-mode .grid_new_holder .form-control {
+    background-color: #fff !important;
+    border-color: #ddd !important;
+    color: #191c24 !important;
+    -webkit-text-fill-color: #191c24!important;
+}
+.light-mode table.table-bordered.dataTable th,
+.light-mode table.table-bordered.dataTable td {
+    border-color: #ddd;
+}
+.light-mode footer.footer {
+    background-color: #ddd;
+}
+.light-mode .card .card-body .chart-holder{
+    position: relative;
+}
+.light-mode .card .card-body .chart-holder::after {
+    content: "";
+    height: 83px;
+    width: 84px;
+    background-color: #191c24;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    border-radius: 20px;
+}
+.light-mode .card .card-body .chart-holder::before {
+    content: "";
+    border-width: 14px;
+    border-style: solid;
+    border-color: #191c24 transparent transparent;
+    position: absolute;
+    top: 108px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    width: 0;
+    height: 0;
+}
+.light-mode .card .card-body .chart-holder canvas {
+    position: relative;
+    z-index: 1;
+}
+
+.theme_mode_switch {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+/* Ligh Morde css start */
+
+.theme_mode_switch label{
+    margin:0;
+}
+#btn--yp {
+    box-sizing: content-box;
+    position: fixed;
+    z-index: 9;
+    bottom: 1em;
+    right: 1em;
+    border: solid 1em transparent;
+    width: 4.625em;
+    height: 3.25em;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/icon-yp.svg) 50%/cover content-box;
+    font: 16px/ 1.25 trebuchet ms, sans-serif;
+    text-indent: 200vw;
+    text-shadow: none;
+    filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
+    transition: .5s;
+    white-space: nowrap;
+  }
+  #btn--yp:before {
+    box-sizing: inherit;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin: 1em -.5em;
+    padding: .5em;
+    width: 100%;
+    border-radius: 5px;
+    background: #e8e0e0;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0vw;
+    white-space: normal;
+    animation: float 1s ease-in-out infinite alternate;
+    content: attr(data-txt);
+  }
+  #btn--yp:hover, #btn--yp:focus {
+    outline: none;
+    filter: grayscale(0) drop-shadow(0 0 1px crimson);
+  }
+
+  @keyframes float {
+    to {
+      transform: translateY(0.75em);
+    }
+  }
+
+  .theme_mode_switch #time {
+    position: absolute;
+    right: 100vw;
+  }
+  .theme_mode_switch #time + label {
+    --i: 0;
+    --j: calc(1 - var(--i));
+    display: grid;
+    grid-gap: 0.5em 0.25em;
+    overflow: hidden;
+    padding: 5px 6px;
+    height: 30px;
+    border-radius: 1.75em;
+    background: hsl(199, 98%, calc(var(--j) * 48%));
+    color: transparent;
+    user-select: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .theme_mode_switch #time + label:before,
+  .theme_mode_switch #time + label:after {
+    width: 20px;
+    height: 20px;
+    transition: inherit;
+    content: "";
+  }
+  .theme_mode_switch #time + label:before {
+    transform-origin: 20% 20%;
+    transform: translate(calc(var(--i) * (100% + 0.25em))) scale(calc(1 - var(--i) * 0.7));
+    background: yellow;
+    --poly: polygon(44.13371% 12.96169%, 50% 0%, 55.86629% 12.96169%, 59.70571% 13.77778%, 63.4388% 14.99073%, 67.02464% 16.58726%, 79.38926% 9.54915%, 76.5165% 23.4835%, 79.14297% 26.40049%, 81.45015% 29.57604%, 83.41274% 32.97536%, 97.55283% 34.54915%, 87.03831% 44.13371%, 87.44861% 48.0374%, 87.44861% 51.9626%, 87.03831% 55.86629%, 97.55283% 65.45085%, 83.41274% 67.02464%, 81.45015% 70.42396%, 79.14297% 73.59951%, 76.5165% 76.5165%, 79.38926% 90.45085%, 67.02464% 83.41274%, 63.4388% 85.00927%, 59.70571% 86.22222%, 55.86629% 87.03831%, 50% 100%, 44.13371% 87.03831%, 40.29429% 86.22222%, 36.5612% 85.00927%, 32.97536% 83.41274%, 20.61074% 90.45085%, 23.4835% 76.5165%, 20.85703% 73.59951%, 18.54985% 70.42396%, 16.58726% 67.02464%, 2.44717% 65.45085%, 12.96169% 55.86629%, 12.55139% 51.9626%, 12.55139% 48.0374%, 12.96169% 44.13371%, 2.44717% 34.54915%, 16.58726% 32.97536%, 18.54985% 29.57604%, 20.85703% 26.40049%, 23.4835% 23.4835%, 20.61074% 9.54915%, 32.97536% 16.58726%, 36.5612% 14.99073%, 40.29429% 13.77778%);
+    -webkit-clip-path: var(--poly);
+    clip-path: var(--poly);
+  }
+  .theme_mode_switch #time + label:after {
+    grid-column: 2;
+    border-radius: 50%;
+    transform: translatey(calc(var(--i) * (-120% - 0.5em)));
+    background: radial-gradient(circle at 19% 19%, rgba(0, 0, 0, 0) 41%, #ffffff 43%);
+  }
+  .theme_mode_switch #time:checked + label {
+    --i: 1;
+  }

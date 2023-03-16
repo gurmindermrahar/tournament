@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournaments</title>
+  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top">
+    <div class="mob-nav-item">
+      <a class="nav-link mob-home-icon" href="index.html"><i mi-name="home" class="material-icons navigation-icon"></i></a>
+    </div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMobile"
+      aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-left">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link home-icon" href="index.html"><i mi-name="home" class="material-icons navigation-icon"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tournaments.html">Tournaments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cash_match.html">Cash Match</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Ranked</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Extra
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="games" class="material-icons navigation-icon"></i>Current
+              Match</a>
+            <a class="dropdown-item" href="#"><i mi-name="shopping_basket"
+                class="material-icons navigation-icon"></i>Shop</a>
+            <a class="dropdown-item" href="#"><i mi-name="question_answer"
+                class="material-icons navigation-icon"></i>FAQ</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a class="navbar-brand mx-auto" href="#">
+      <div id="logo"><img src="images/logo.jpg" alt="logo"></div>
+    </a>
+
+    <div class="collapse navbar-collapse right-nav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link pr-5" href="#"><i mi-name="search" class="material-icons navigation-icon"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon pr-5 notification" href="#">
+            <i mi-name="notifications_none" class="material-icons navigation-icon"></i>
+            <span class="counter">1689</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i mi-name="chat" class="material-icons navigation-icon"></i></a>
+        </li>
+        <li class="nav-item dropdown user-profile">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i mi-name="account_circle" class="material-icons navigation-icon"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="chrome_reader_mode" class="material-icons navigation-icon"></i>Profile</a>
+            <a class="dropdown-item" href="login.html"><i mi-name="power_settings_new" class="material-icons navigation-icon"></i>Log Out</a>
+            <a class="dropdown-item" href="organize_tournament.html"><i mi-name="view_list" class="material-icons navigation-icon"></i>Organize Tournament</a>
+            <a class="dropdown-item" href="Add_tournament.html"><i mi-name="add" class="material-icons navigation-icon"></i>Add Tournament</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile -->
+    <div class="collapse" id="navbarMobile">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="tournaments_games.html">Tournaments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cash_match.html">Cash Match</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Ranked</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Extra
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+              <i mi-name="games" class="material-icons navigation-icon"></i>
+              Current Match
+            </a>
+            <a class="dropdown-item" href="#"><i mi-name="shopping_basket" class="material-icons navigation-icon"></i>Shop</a>
+            <a class="dropdown-item" href="#"><i mi-name="question_answer" class="material-icons navigation-icon"></i>FAQ</a>
+          </div>
+        </li>
+        <li>
+          <hr class="solid">
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link pr-5" href="#"><i mi-name="search" class="material-icons navigation-icon"></i>
+            Search
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon pr-5 notification" href="#">
+            <i mi-name="notifications_none" class="material-icons navigation-icon"></i>
+            Notifications
+            <span class="counter">1689</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i mi-name="chat" class="material-icons navigation-icon"></i> Messages</a>
+        </li>
+        <li class="nav-item dropdown user-profile">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i mi-name="account_circle" class="material-icons navigation-icon"></i> Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i mi-name="chrome_reader_mode" class="material-icons navigation-icon"></i>Profile</a>
+            <a class="dropdown-item" href="login.html"><i mi-name="power_settings_new" class="material-icons navigation-icon"></i>Log Out</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-image">
+      <img alt="banner-image" src="images/tr-banner.png">
+    </div>
+  </section>
+  <!-- Tournament Games Section -->
+  <section class="pixel_Tournaments section_panel">      
+    <div class="container">
+      <h4 class="title">
+        <img src="images/tournament_icon.png"> <p>TOURNAMENTS</p>
+      </h4>
+      <div class="px_tournaments_holder">
+        <div class="tournament_item">
+          <div class="head_content">
+            <div class="top_head">
+              <div class="title">APEX LEGENDS</div>
+              <span>$50</span>
+            </div>
+            <div class="head_info">
+              <span><strong>12:00 PM</strong></span>
+              <span><strong>Entry/Player</strong>5 Credits</span>
+              <span><strong><i mi-name="alarm" class="material-icons navigation-icon"></i> 32 mins</strong></span>
+            </div>
+          </div>
+          <div class="middle_content">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <p>1v1 Duos Kill Race</p>
+                  <p>
+                    <label>Type:</label>
+                    <span>Best of 1</span>
+                  </p>
+                </div>
+                <div class="col-md-6 col-xs-6 right-info">
+                  <p>
+                    <label>Region:</label>
+                    <span>NA</span></p>
+                  <p>
+                    <label>Platform:</label>
+                    <span>Cross Play</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_content">
+            <button><a href="tournament_detail.html"> View Tournament <i mi-name="keyboard_arrow_right" class="material-icons navigation-icon"></i></a> </button>
+          </div>
+        </div>
+        
+        <div class="tournament_item">
+          <div class="head_content">
+            <div class="top_head">
+              <div class="title">CALL OF DUTY : WARZONE 2.0</div>
+              <span>$50</span>
+            </div>
+            <div class="head_info">
+              <span><strong>12:00 PM</strong></span>
+              <span><strong>Entry/Player</strong>5 Credits</span>
+              <span><strong><i mi-name="alarm" class="material-icons navigation-icon"></i> 32 mins</strong></span>
+            </div>
+          </div>
+          <div class="middle_content">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <p>1v1 Duos Kill Race</p>
+                  <p>
+                    <label>Type:</label>
+                    <span>Best of 1</span>
+                  </p>
+                </div>
+                <div class="col-md-6 col-xs-6 right-info">
+                  <p>
+                    <label>Region:</label>
+                    <span>NA</span></p>
+                  <p>
+                    <label>Platform:</label>
+                    <span>Cross Play</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_content">
+            <button><a href="tournament_detail.html">View Tournament <i mi-name="keyboard_arrow_right" class="material-icons navigation-icon"></i></a> </button>
+          </div>
+        </div>
+        
+        <div class="tournament_item">
+          <div class="head_content">
+            <div class="top_head">
+              <div class="title">CALL OF DUTY :  MWII</div>
+              <span>$50</span>
+            </div>
+            <div class="head_info">
+              <span><strong>12:00 PM</strong></span>
+              <span><strong>Entry/Player</strong>5 Credits</span>
+              <span><strong><i mi-name="alarm" class="material-icons navigation-icon"></i> 32 mins</strong></span>
+            </div>
+          </div>
+          <div class="middle_content">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <p>1v1 SND</p>
+                  <p>
+                    <label>Type:</label>
+                    <span>Best of 1</span>
+                  </p>
+                </div>
+                <div class="col-md-6 col-xs-6 right-info">
+                  <p>
+                    <label>Region:</label>
+                    <span>NA</span></p>
+                  <p>
+                    <label>Platform:</label>
+                    <span>Cross Play</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_content">
+            <button><a href="tournament_detail.html">View Tournament <i mi-name="keyboard_arrow_right" class="material-icons navigation-icon"></i></a> </button>
+          </div>
+        </div>
+        
+        <div class="tournament_item">
+          <div class="head_content">
+            <div class="top_head">
+              <div class="title">CALL OF DUTY : MWII</div>
+              <span>$50</span>
+            </div>
+            <div class="head_info">
+              <span><strong>12:00 PM</strong></span>
+              <span><strong>Entry/Player</strong>5 Credits</span>
+              <span><strong><i mi-name="alarm" class="material-icons navigation-icon"></i> 32 mins</strong></span>
+            </div>
+          </div>
+          <div class="middle_content">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <p>1v1 Kill Race | Shoot House</p>
+                  <p>
+                    <label>Type:</label>
+                    <span>Best of 1</span>
+                  </p>
+                </div>
+                <div class="col-md-6 col-xs-6 right-info">
+                  <p>
+                    <label>Region:</label>
+                    <span>NA</span></p>
+                  <p>
+                    <label>Platform:</label>
+                    <span>Cross Play</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_content">
+            <button><a href="tournament_detail.html">View Tournament <i mi-name="keyboard_arrow_right" class="material-icons navigation-icon"></i></a> </button>
+          </div>
+        </div>
+        
+        <div class="tournament_item">
+          <div class="head_content">
+            <div class="top_head">
+              <div class="title">LEAGUE OF LEGENDS: TFT</div>
+              <span>$50</span>
+            </div>
+            <div class="head_info">
+              <span><strong>12:00 PM</strong></span>
+              <span><strong>Entry/Player</strong>5 Credits</span>
+              <span><strong><i mi-name="alarm" class="material-icons navigation-icon"></i> 32 mins</strong></span>
+            </div>
+          </div>
+          <div class="middle_content">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <p>1v1 Singles Better Placement</p>
+                  <p>
+                    <label>Type:</label>
+                    <span>Best of 1</span>
+                  </p>
+                </div>
+                <div class="col-md-6 col-xs-6 right-info">
+                  <p>
+                    <label>Region:</label>
+                    <span>NA</span></p>
+                  <p>
+                    <label>Platform:</label>
+                    <span>Cross Play</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_content">
+            <button><a href="tournament_detail.html">View Tournament <i mi-name="keyboard_arrow_right" class="material-icons navigation-icon"></i></a> </button>
+          </div>
+        </div>
+        
+        <div class="tournament_item">
+          <div class="head_content">
+            <div class="top_head">
+              <div class="title">FORTNITE</div>
+              <span>$50</span>
+            </div>
+            <div class="head_info">
+              <span><strong>12:00 PM</strong></span>
+              <span><strong>Entry/Player</strong>5 Credits</span>
+              <span><strong><i mi-name="alarm" class="material-icons navigation-icon"></i> 32 mins</strong></span>
+            </div>
+          </div>
+          <div class="middle_content">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <p>1v1 Duos Kill Race</p>
+                  <p>
+                    <label>Type:</label>
+                    <span>Best of 1</span>
+                  </p>
+                </div>
+                <div class="col-md-6 col-xs-6 right-info">
+                  <p>
+                    <label>Region:</label>
+                    <span>NA</span></p>
+                  <p>
+                    <label>Platform:</label>
+                    <span>Cross Play</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_content">
+            <button><a href="tournament_detail.html">View Tournament <i mi-name="keyboard_arrow_right" class="material-icons navigation-icon"></i></a> </button>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- Online Tournament Info -->
+  <!-- <section class="online_tournament_info section_panel">
+    <div class="container">
+      <div class="bg_sec">
+        <h4 class="title">
+          <span>ONLINE</span> TOURNAMENT
+        </h4>
+        <div class="main_info_holder">
+          <p>
+            Pixels Gaming's tournaments are a revolutionary new way for both professional and casual gamers to test
+            their merit against one another. Our finely tuned competitive tournaments offer a wide array of
+            possibilities for each player's abilities to be shown off to their peers. Play tournaments for money on the
+            platform of your choice. We offer Xbox One tournaments , as well as PS4 tournaments and PC tournaments. And
+            don't worry, with the launch of the new consoles, we'll also offer Xbox Series X tournaments and PS5
+            tournaments. Only here at Pixels Gaming will you find the highest payouts and value for your competitive
+            dollar when it comes to tournaments for money. Our tournaments with cash prizes and speedy payouts rival and
+            supersede all other esports and online tournaments platforms currently. Sign up and join in on the
+            experience right here at Pixels Gaming.
+          </p>
+
+          <div id="main">
+            <div class="">
+              <div class="accordion" id="faq">
+                <div class="card">
+                  <div class="card-header" id="faqhead1">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
+                      aria-expanded="true" aria-controls="faq1">COMPETITIVE GAMING TOURNAMENTS</a>
+                  </div>
+
+                  <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                    <div class="card-body">
+                      Games we offer include Call of Duty: WWII, Call of Duty: Ghosts, Call of Duty: Black Ops IIII, Call of Duty: Modern Warfare, Call of Duty: Cold War, and of course, Warzone. Our schedule is constantly evolving and reflects the popularity of titles currently. We are always listening to our players and adding new games like Rogue Company and Fall Guys. We offer many variants in gameplay, whether it be a single map experience in gameplay or a specific weapon experience such as a Pro Mod tournament. We hope you enjoy all that we have to offer and explore our wide array of offers for paid competitive gaming.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="faqhead2">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                      aria-expanded="true" aria-controls="faq2">TOURNAMENTS WITH CASH PRIZES</a>
+                  </div>
+
+                  <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                    <div class="card-body">
+                      Grab your friends, link up, and create a team of 1, 2, 3, or even 4 players to experience competitive gaming like never before. Bask in the glory of your winnings with a cash prize. Take no prisoners as you play in our Xbox Series X and PS5 tournaments for money. Yes, you read that correctly. Our tournaments offer actual, spendable, real life, cash! Our platform showcases a sleek and intuitive experience unrivaled in the online esports and competitive gaming communities. We pride ourselves in listening to our community so be sure to pay close attention to our tournament listings as we continue to grow and offer a diverse portfolio of games and modes of play to suit gameplay for competitive players of all types. Our administrative staff is professional, well-versed in online gaming, and responsive to new requests from our player base.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="faqhead3">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                      aria-expanded="true" aria-controls="faq3">LIVE TOURNAMENTS</a>
+                  </div>
+
+                  <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                    <div class="card-body">
+                      Recently the gaming world has seen rise to live gaming tournaments, and now with a rise of online tournaments you need to choose a place where you are valued as a player and stand out of the crowd. That place is CMG. Our live support staff are there to make sure you are treated fairly and supported through each and every tournament across the website, whether it be on Playstation, PC or Xbox, whether you're a paying player, or a free tournament player, you will get the same treatment as a professional and as a casual player. This is the difference Pixel Esports offers you. For as little as 1 CMG Credits ($.75 USD) You can enter a paid tournament. There are many variants of this and we even have 20-25 credit tournaments for those who truly wish to play for high stakes.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <p>COMPETITIONS</p>
+              <ul>
+                <li>Tournaments</li>
+                <li>Fortnite</li>
+                <li>Call of Duty</li>
+                <li>Latest News</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>SUPPORT</p>
+              <ul>
+                <li>Ticket Center</li>
+                <li>FAQ</li>
+                <li>About</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>CONTACT</p>
+              <ul>
+                <li>Press inquiries</li>
+                <li>Advertisements</li>
+                <li>Work with us</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>FOLLOW US</p>
+              <ul class="social_icons">
+                <li><a href="https://twitter.com/pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/Twitter.png"></a></li>
+                <li><a href="https://instagram.com/pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/Instagram.png"></a></a></li>
+                <li><a href="https://tiktok.com/@pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/TikTok.png"></a></a></li>
+                <li><a href="https://discord.gg/XrynEh7BF9" target="_blank"><img alt="social_icon"
+                      src="images/Discord.png"></a></a></li>
+                <li><a href="https://youtube.com/@pixelesports" target="_blank"><img alt="social_icon"
+                      src="images/YouTube.png"></a></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        © 2022 Pixel Esports LLC. All Rights Reserved.
+      </div>
+  </footer>
+
+
+</body>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
